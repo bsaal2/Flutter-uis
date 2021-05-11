@@ -13,34 +13,44 @@ class DoctorProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(
-      color: backgroundColor,
-      child: ListView(
-        children: [
-          /** Banner */
-          this._buildBanner(),
-          Container(
-            child: Padding(
-              padding: EdgeInsets.only(left: 15, right: 15),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  SizedBox(height: 20),
-                  this._appointmentSection(),
-                  SizedBox(height: 20),
-                  this._dashboardSection1(),
-                  SizedBox(height: 20),
-                  this._dashboardSection2(),
-                  SizedBox(height: 20),
-                  this._dashboardSection3()
-                ],
+      body: Container(
+        color: backgroundColor,
+        child: ListView(
+          children: [
+            /** Banner */
+            this._buildBanner(),
+            Container(
+              child: Padding(
+                padding: EdgeInsets.only(left: 15, right: 15),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    SizedBox(height: 20),
+                    this._appointmentSection(),
+                    SizedBox(height: 20),
+                    this._dashboardSection1(),
+                    SizedBox(height: 20),
+                    this._dashboardSection2(),
+                    SizedBox(height: 20),
+                    this._dashboardSection3()
+                  ],
+                ),
               ),
-            ),
-          )
+            )
+          ],
+        ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.grey.shade800,
+        unselectedItemColor: Colors.grey,
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.person_add), label: 'Refer'),
+          BottomNavigationBarItem(icon: Icon(Icons.history), label: 'History')
         ],
       ),
-    ));
+    );
   }
 
   Container _dashboardSection3() {
