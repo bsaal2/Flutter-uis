@@ -1,4 +1,0 @@
-#Tue May 11 21:30:49 NPT 2021
-base.0=/Users/bgiri/Documents/bsaal2/Project/Flutter/flutter-uis/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
