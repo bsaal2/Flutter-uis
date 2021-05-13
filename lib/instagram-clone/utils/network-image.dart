@@ -6,3 +6,8 @@ const List<String> Avatar = [
   "https://instagram.fbhr1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/184289840_3845775278882502_4647395343086318066_n.jpg?tp=1&_nc_ht=instagram.fbhr1-1.fna.fbcdn.net&_nc_ohc=n4F5xm7fD1oAX8PZeT2&edm=ALlQn9MBAAAA&ccb=7-4&oh=d8475d6d10c9baaf743f2022064e6f8f&oe=60C028F1&_nc_sid=48a2a6",
   "https://instagram.fbhr1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/174092602_815604739368441_585548668213565454_n.jpg?tp=1&_nc_ht=instagram.fbhr1-1.fna.fbcdn.net&_nc_ohc=Ga2m-xfdYcEAX88iQG-&tn=91om8p1Uiqzzt7Rz&edm=ALlQn9MBAAAA&ccb=7-4&oh=16c4e258350571a3a181cde15ccd1699&oe=60BF9FFF&_nc_sid=48a2a6"
 ];
+
+const List<String> Post = [
+  "https://neilpatel.com/wp-content/uploads/2018/03/instagram-marketing-tips.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-omC8XqoyP7XP6PE0d92F9xaUuCy2pXqoeA&usqp=CAU"
+];

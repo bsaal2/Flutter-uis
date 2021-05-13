@@ -17,15 +17,5 @@ import 'instagram-clone/screens/instagram-home.dart';
 
 /// Main function to run the Instagram Home Clone.
 void main() {
-  runApp(MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          backgroundColor: Colors.white,
-          textTheme: TextTheme(
-              headline1: TextStyle(
-                  color: Colors.black,
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold),
-              headline2: TextStyle(color: Colors.grey, fontSize: 12))),
-      home: InstagramHome()));
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: InstagramHome()));
 }

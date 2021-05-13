@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:tutorial/avatar.dart';
 import '../utils/network-image.dart';
 
 class StoryItem extends StatelessWidget {
   final String avatar = Avatar[3];
+  final String image;
+  final String text;
+
+  StoryItem(this.image, this.text);
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +33,7 @@ class StoryItem extends StatelessWidget {
                     shape: BoxShape.circle,
                     border: Border.all(width: 1, color: Colors.black),
                     image: DecorationImage(
-                        image: NetworkImage(avatar), fit: BoxFit.cover)),
+                        image: NetworkImage(image), fit: BoxFit.cover)),
               ),
             ),
           ),
@@ -38,7 +41,7 @@ class StoryItem extends StatelessWidget {
           SizedBox(
             width: 70,
             child: Text(
-              'Endu',
+              text,
               textAlign: TextAlign.center,
               overflow: TextOverflow.ellipsis,
             ),
