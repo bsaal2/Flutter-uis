@@ -18,7 +18,7 @@ class InstagramHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Theme.of(context).backgroundColor,
+        backgroundColor: Colors.white,
         body: Container(
           child: SingleChildScrollView(
               child: Column(
@@ -101,9 +101,7 @@ class InstagramHome extends StatelessWidget {
           child: Row(
             children: [
               Expanded(
-                child: FittedBox(
-                    fit: BoxFit.fill,
-                    child: Image(image: NetworkImage(Post[0]))),
+                child: Image(image: NetworkImage(Post[0])),
               )
             ],
           ),
